@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Document</title>
+    <link href="../css/tailwind.css" rel="stylesheet">  <!--tailwind_Css-->
+    <link href="../css/signIn.css" rel="stylesheet">  <!--tailwind_Css-->
+
+</head>
+<body>
+<nav class="flex h-24 items-center w-full border-b">
+    <div class="flex-grow flex justify-center">
+        <span class="text-3xl font-bold change">SNIPP</span>
+
+    </div>
+    <div class="justify-around flex-grow flex justify-between change">
+        <a class="hover:font-bold hover:scale-110 transition duration-300 ease-in-out transform hover:-translate-y-1" href="/">Home</a>
+        <a class="hover:font-bold hover:scale-110 transition duration-300 ease-in-out transform hover:-translate-y-1">About</a>
+        <a class="hover:font-bold hover:scale-110 transition duration-300 ease-in-out transform hover:-translate-y-1">Service</a>
+        <a class="hover:font-bold hover:scale-110 transition duration-300 ease-in-out transform hover:-translate-y-1">Contact</a>
+    </div>
+    <div class="flex-grow flex justify-center transform">
+        <button class="flex border rounded-lg w-24 text-xl justify-center p-1 hover:scale-110 change focus:outline-none">Login</button>
+    </div>
+
+</nav>
+
+<!-- Main Section-->
+<section class="flex justify-center items-center flex-col h-full" style="height: 45rem">
+    <div class="container" id="container">
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <p class="text-2xl">Create Account</p>
+                <input type="text" placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <button class="focus:outline-none bg-red-600 text-white rounded-full p-3 pl-10 pr-10 mt-10 uppercase">Sign Up</button>
+            </form>
+        </div>
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <p class="text-2xl">Sign in</p>
+                <input type="email" placeholder="Email" />
+                <input type="password" placeholder="Password" />
+                <a href="#">Forgot your password?</a>
+                <button class="focus:outline-none bg-red-600 text-white rounded-full p-3 pl-10 pr-10 mt-10 uppercase">Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <p class="text-2xl">Welcome Back!</p>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="bg-transparent border-white focus:outline-none" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <p class="text-2xl">Hello, Friend!</p>
+                    <p>Enter your personal details and start journey with us</p>
+                    <button class="bg-transparent border-white focus:outline-none" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="../js/signIn.js"></script>
+
+
+</body>
+</html>
